@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:padding="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/textAlert"
+                android:layout_centerHorizontal="true"
+                android:text="Are You Sure To Delete This Item?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noBtn"
+                android:layout_below="@+id/textAlert"
+                android:text="No"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yesBtn"
+               android:layout_alignBottom="@+id/noBtn"
+                android:layout_alignParentRight="true"
+                android:text="Yes"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
